@@ -1,0 +1,15 @@
+{
+  "name": "redisapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.11.0",
+    "redis": "^4.5.1"
+  }
+}
