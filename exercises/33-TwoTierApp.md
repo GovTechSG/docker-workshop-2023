@@ -13,7 +13,7 @@ You should deploy the express application as a container, a redis server as anot
 Redis is a key-value NoSQL Database. The redis container is available from dockerhub under the name `redis`. By default, the redis container listens at port 6379, and does not require any username and password. 
 
 ### The Redis App
-The Redis App assumes that a Redis Server is already available at `127.0.0.1:6379` without any credentials required. If an environment variable `REDIS_HOST` is available, it will use it in place of 127.0.0.1. If an environment variable `6379` is available, it will use it in place of 6379.
+The Redis App assumes that a Redis Server is already available at `127.0.0.1:6379` without any credentials required. If an environment variable `REDIS_HOST` is available, it will use it in place of 127.0.0.1. If an environment variable `REDIS_PORT` is available, it will use it in place of 6379.
 
 You can insert environment variables into a container using the `-e` flag. I.e. `docker run -e VAR1=VAL1 -e VAR2=VAL2 ubuntu`
 

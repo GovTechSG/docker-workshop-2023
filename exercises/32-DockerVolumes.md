@@ -130,7 +130,7 @@ $ root@03cf1a18d544:/data# # Run the app in background
 $ root@03cf1a18d544:/data# node app.js &
 [1] 2
 Example app listening on port 3000
-$ root@03cf1a18d544:/data# 
+$ root@03cf1a18d544:/data# curl http://localhost:3000
 Hello World!
 root@03cf1a18d544:/data# exit
 exit

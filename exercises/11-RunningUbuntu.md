@@ -23,12 +23,12 @@ docker.io/library/ubuntu:latest
 ### Run Ubuntu (With a Shell)
 Start a Ubuntu Container, and get a shell into it.
 ```
-$ docker container run -it ubuntu -- /bin/bash
+$ docker container run -it ubuntu /bin/bash
 root@cf2720985115:/#
 ```
 
 Explore and see what you can do while inside the container!
-1. Try running a curl command to `https://google.com`.
+1. Try running a curl command to `https://google.com`. (If you fail, try to figure out how to make it work)
 2. What user are you in Ubuntu?
 
 > The Ubuntu image will come with a lesser functionalities than a proper Ubuntu Desktop/Server installation. Containers are meant to be lightweight, and to that extend, images usually come with lesser tools and binaries. 
@@ -140,7 +140,7 @@ root         1  0.0  0.0   2788   996 ?        Ss   13:16   0:00 sleep infinity
 root        19  0.0  0.0   4628  3796 pts/0    Ss   13:32   0:00 /bin/bash
 root        28  0.0  0.0   7060  1548 pts/0    R+   13:32   0:00 ps aux
 root@12ae55a98f45:/# # Note that there are three processes running - let's stop our own shell
-root@12ae55a98f45:/# stop -9 19
+root@12ae55a98f45:/# kill -9 19
 $ # We're back to our host
 $ # Now, stop the last container yourself.
 ```
